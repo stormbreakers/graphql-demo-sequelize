@@ -12,7 +12,7 @@ const app = Express();
 app.use('/graphql', GraphHTTP({
   schema: Schema,
   pretty: true,
-  graphiql: true
+  graphiql: false
 }));
 
 app.listen(APP_PORT, ()=> {
